@@ -367,7 +367,7 @@ server {
 Assurez-vous que l'adresse IP de votre serveur de production est ajoutée à la liste `ALLOWED_HOSTS` dans `backend/.env` :
 
 ```
-ALLOWED_HOSTS=localhost,127.0.0.1,votre-domaine.com,178.16.143.68
+ALLOWED_HOSTS=localhost,127.0.0.1,votre-domaine.com
 ```
 
 ## Maintenance et Mises à jour
