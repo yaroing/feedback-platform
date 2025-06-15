@@ -1,0 +1,173 @@
+[
+  {
+    "type": "whatsapp_facebook",
+    "to": "+221778615582",
+    "from": "Facebook WhatsApp API",
+    "body": "[Feedback #12] Message bien copi\u00e9 de Whatsapp.",
+    "timestamp": "2025-05-31T20:41:12.695107",
+    "sid": "SM20250531204112",
+    "status": "simulated"
+  },
+  {
+    "type": "whatsapp_facebook",
+    "to": "+33612345678",
+    "from": "Facebook WhatsApp API",
+    "body": "Merci pour votre message ! Nous l'avons bien re\u00e7u et nous allons le traiter dans les plus brefs d\u00e9lais.",
+    "timestamp": "2025-05-31T20:43:12.977104",
+    "sid": "SM20250531204312",
+    "status": "simulated"
+  },
+  {
+    "type": "whatsapp_facebook",
+    "to": "+33612345678",
+    "from": "Facebook WhatsApp API",
+    "body": "Merci pour votre message ! Nous l'avons bien re\u00e7u et nous allons le traiter dans les plus brefs d\u00e9lais.",
+    "timestamp": "2025-05-31T20:43:40.379120",
+    "sid": "SM20250531204340",
+    "status": "simulated"
+  },
+  {
+    "type": "whatsapp_facebook",
+    "to": "+33612345678",
+    "from": "Facebook WhatsApp API",
+    "body": "[Feedback #14] Welcome and congratulations!! This message demonstrates your ability to send a WhatsApp message notification from the Cloud API, hosted by Meta. Thank you for taking the time to test with us.",
+    "timestamp": "2025-05-31T20:44:00.369498",
+    "sid": "SM20250531204400",
+    "status": "simulated"
+  },
+  {
+    "type": "whatsapp_facebook",
+    "to": "+33612345678",
+    "from": "Facebook WhatsApp API",
+    "body": "[Feedback #14] Welcome and congratulations!! This message demonstrates your ability to send a WhatsApp message notification from the Cloud API, hosted by Meta. Thank you for taking the time to test with us.",
+    "timestamp": "2025-05-31T20:44:00.381304",
+    "sid": "SM20250531204400",
+    "status": "simulated"
+  },
+  {
+    "type": "whatsapp_facebook",
+    "to": "+33612345678",
+    "from": "Facebook WhatsApp API",
+    "body": "Merci pour votre message ! Nous l'avons bien re\u00e7u et nous allons le traiter dans les plus brefs d\u00e9lais.",
+    "timestamp": "2025-05-31T20:46:11.991183",
+    "sid": "SM20250531204611",
+    "status": "simulated"
+  },
+  {
+    "type": "whatsapp_facebook",
+    "to": "+221778615582",
+    "from": "Facebook WhatsApp API",
+    "body": "Bienvenue sur notre service de feedback par WhatsApp. Vous pouvez nous envoyer vos commentaires, suggestions ou questions. Commandes disponibles:\n- *aide*: Affiche ce message d'aide\n- *statut*: V\u00e9rifie le statut de vos feedbacks pr\u00e9c\u00e9dents",
+    "timestamp": "2025-05-31T20:46:54.074237",
+    "sid": "SM20250531204654",
+    "status": "simulated"
+  },
+  {
+    "type": "whatsapp_facebook",
+    "to": "+33612345678",
+    "from": "Facebook WhatsApp API",
+    "body": "Merci pour votre message ! Nous l'avons bien re\u00e7u et nous allons le traiter dans les plus brefs d\u00e9lais.",
+    "timestamp": "2025-05-31T20:47:22.332186",
+    "sid": "SM20250531204722",
+    "status": "simulated"
+  },
+  {
+    "type": "whatsapp_facebook",
+    "to": "+221778615582",
+    "from": "Facebook WhatsApp API",
+    "body": "Bienvenue sur notre service de feedback par WhatsApp. Vous pouvez nous envoyer vos commentaires, suggestions ou questions. Commandes disponibles:\n- *aide*: Affiche ce message d'aide\n- *statut*: V\u00e9rifie le statut de vos feedbacks pr\u00e9c\u00e9dents",
+    "timestamp": "2025-05-31T20:49:33.252100",
+    "sid": "SM20250531204933",
+    "status": "simulated"
+  },
+  {
+    "type": "whatsapp_facebook",
+    "to": "+221778615582",
+    "from": "Facebook WhatsApp API",
+    "body": "Merci pour votre message ! Nous l'avons bien re\u00e7u et nous allons le traiter dans les plus brefs d\u00e9lais.",
+    "timestamp": "2025-05-31T21:35:33.631251",
+    "sid": "SM20250531213533",
+    "status": "simulated"
+  },
+  {
+    "type": "whatsapp_facebook",
+    "to": "+221778615582",
+    "from": "Facebook WhatsApp API",
+    "body": "Merci pour votre message ! Nous l'avons bien re\u00e7u et nous allons le traiter dans les plus brefs d\u00e9lais.",
+    "timestamp": "2025-05-31T22:12:24.471013",
+    "sid": "SM20250531221224",
+    "status": "simulated"
+  },
+  {
+    "type": "whatsapp_facebook",
+    "to": "+221778615582",
+    "from": "Facebook WhatsApp API",
+    "body": "Merci pour votre message ! Nous l'avons bien re\u00e7u et nous allons le traiter dans les plus brefs d\u00e9lais.",
+    "timestamp": "2025-06-14T13:01:07.229288",
+    "sid": "SM20250614130107",
+    "status": "simulated"
+  },
+  {
+    "type": "whatsapp_facebook",
+    "to": "+221774903834",
+    "from": "Facebook WhatsApp API",
+    "body": "Merci pour votre message ! Nous l'avons bien re\u00e7u et nous allons le traiter dans les plus brefs d\u00e9lais.",
+    "timestamp": "2025-06-14T13:05:05.722523",
+    "sid": "SM20250614130505",
+    "status": "simulated"
+  },
+  {
+    "type": "whatsapp_facebook",
+    "to": "+221774903834",
+    "from": "Facebook WhatsApp API",
+    "body": "Bienvenue sur notre service de feedback par WhatsApp. Vous pouvez nous envoyer vos commentaires, suggestions ou questions. Commandes disponibles:\n- *aide*: Affiche ce message d'aide\n- *statut*: V\u00e9rifie le statut de vos feedbacks pr\u00e9c\u00e9dents",
+    "timestamp": "2025-06-14T13:05:14.814276",
+    "sid": "SM20250614130514",
+    "status": "simulated"
+  },
+  {
+    "type": "whatsapp_facebook",
+    "to": "+221778615582",
+    "from": "Facebook WhatsApp API",
+    "body": "Bienvenue sur notre service de feedback par WhatsApp. Vous pouvez nous envoyer vos commentaires, suggestions ou questions. Commandes disponibles:\n- *aide*: Affiche ce message d'aide\n- *statut*: V\u00e9rifie le statut de vos feedbacks pr\u00e9c\u00e9dents",
+    "timestamp": "2025-06-14T13:10:33.111895",
+    "sid": "SM20250614131033",
+    "status": "simulated"
+  },
+  {
+    "type": "whatsapp_facebook",
+    "to": "+221778615582",
+    "from": "Facebook WhatsApp API",
+    "body": "Merci pour votre message ! Votre feedback a \u00e9t\u00e9 enregistr\u00e9 avec succ\u00e8s. Un membre de notre \u00e9quipe le traitera prochainement.",
+    "timestamp": "2025-06-14T13:24:23.938109",
+    "sid": "SM20250614132423",
+    "status": "simulated"
+  },
+  {
+    "type": "whatsapp_facebook",
+    "to": "+221778615582",
+    "from": "Facebook WhatsApp API",
+    "body": "Merci pour votre message ! Votre feedback a \u00e9t\u00e9 enregistr\u00e9 avec succ\u00e8s. Un membre de notre \u00e9quipe le traitera prochainement.",
+    "timestamp": "2025-06-14T13:26:44.264191",
+    "sid": "SM20250614132644",
+    "status": "simulated"
+  },
+  {
+    "type": "whatsapp_facebook",
+    "to": "+221778615582",
+    "from": "Facebook WhatsApp API",
+    "body": "Comment utiliser ce service :\n- Envoyez simplement votre message pour soumettre un feedback\n- 'categories' : voir la liste des cat\u00e9gories disponibles\n- 'categorie: [nom]' : d\u00e9finir la cat\u00e9gorie de votre dernier feedback\n- 'priorite: [haute/moyenne/basse]' : d\u00e9finir la priorit\u00e9 de votre feedback\n- 'help' : afficher ce message d'aide",
+    "timestamp": "2025-06-14T13:27:17.450049",
+    "sid": "SM20250614132717",
+    "status": "simulated"
+  },
+  {
+    "type": "whatsapp_facebook",
+    "to": "+221778615582",
+    "from": "Facebook WhatsApp API",
+    "body": "Comment utiliser ce service :\n- Envoyez simplement votre message pour soumettre un feedback\n- 'categories' : voir la liste des cat\u00e9gories disponibles\n- 'categorie: [nom]' : d\u00e9finir la cat\u00e9gorie de votre dernier feedback\n- 'priorite: [haute/moyenne/basse]' : d\u00e9finir la priorit\u00e9 de votre feedback\n- 'help' : afficher ce message d'aide",
+    "timestamp": "2025-06-14T13:32:37.727537",
+    "sid": "SM20250614133237",
+    "status": "simulated"
+  }
+]

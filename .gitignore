@@ -1,0 +1,90 @@
+# Fichiers d'environnement
+.env
+.env.*
+!.env.example
+
+# Fichiers Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+migrations/*.py
+!migrations/__init__.py
+
+# Logs
+*.log
+logs/
+webhook.log
+
+# Environnement virtuel
+venv/
+ENV/
+.venv
+.python-version
+
+# Fichiers IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.pydevproject
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnp
+.pnp.js
+.npmrc
+
+# React
+build/
+coverage/
+.eslintcache
+*.local
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Base de données
+*.sqlite3
+*.db
+postgres_data/
+
+# Certificats et clés
+*.pem
+*.key
+*.cert
+*.crt
+
+# Divers
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Ne pas ignorer ces fichiers
+!.gitignore
+!.dockerignore

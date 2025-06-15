@@ -1,0 +1,111 @@
+services:
+  db:
+    image: postgres:14
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=feedback_platform
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:6
+    ports:
+      - "6379:6379"
+
+  backend:
+    build: ./backend
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - redis
+    environment:
+      - DEBUG=1
+      - DATABASE_URL=postgres://postgres:postgres@db:5432/feedback_platform
+      - REDIS_URL=redis://redis:6379/0
+      - SMS_SIMULATION_MODE=True
+      - TWILIO_ACCOUNT_SID=AC_SIMULATION_MODE
+      - TWILIO_AUTH_TOKEN=AUTH_SIMULATION_MODE
+      - TWILIO_PHONE_NUMBER=+13187318463
+      - TWILIO_WHATSAPP_NUMBER=+13187318463
+
+  celery:
+    build: ./backend
+    command: celery -A feedback_project worker -l info
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - backend
+      - redis
+    environment:
+      - DEBUG=1
+      - DATABASE_URL=postgres://postgres:postgres@db:5432/feedback_platform
+      - REDIS_URL=redis://redis:6379/0
+      - SMS_SIMULATION_MODE=True
+      - TWILIO_ACCOUNT_SID=AC_SIMULATION_MODE
+      - TWILIO_AUTH_TOKEN=AUTH_SIMULATION_MODE
+      - TWILIO_PHONE_NUMBER=+13187318463
+      - TWILIO_WHATSAPP_NUMBER=+13187318463
+      
+  celery-beat:
+    build: ./backend
+    command: celery -A feedback_project beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - backend
+      - redis
+      - celery
+    environment:
+      - DEBUG=1
+      - DATABASE_URL=postgres://postgres:postgres@db:5432/feedback_platform
+      - REDIS_URL=redis://redis:6379/0
+
+  frontend:
+    build: ./frontend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  flower:
+    build: ./backend
+    command: celery -A feedback_project flower --port=5555
+    volumes:
+      - ./backend:/app
+    ports:
+      - "5555:5555"
+    depends_on:
+      - celery
+      - redis
+    environment:
+      - DEBUG=1
+      - DATABASE_URL=postgres://postgres:postgres@db:5432/feedback_platform
+      - REDIS_URL=redis://redis:6379/0
+
+  webhook-sms:
+    build: ./webhook
+    command: python app.py --host 0.0.0.0 --port 5000 --feedback-url http://backend:8000/api/inbound/webhook/json-sms/
+    volumes:
+      - ./webhook:/app
+    ports:
+      - "5000:5000"
+    depends_on:
+      - backend
+    environment:
+      - FEEDBACK_URL=http://backend:8000/api/inbound/webhook/json-sms/
+      - VERIFY_SSL=false
+      - DEBUG=1
+      - WEBHOOK_PUBLIC_URL=http://localhost:5000
+
+volumes:
+  postgres_data:

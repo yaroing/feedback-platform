@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme de Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .api-link {
+            display: block;
+            margin: 10px 0;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .api-link:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Plateforme de Feedback</h1>
+    
+    <div class="section">
+        <h2>Bienvenue sur la Plateforme de Feedback</h2>
+        <p>Cette application permet de collecter, gérer et analyser les feedbacks provenant de différents canaux de communication, notamment WhatsApp, SMS et formulaires web.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Liens API</h2>
+        <a href="/api/docs/" class="api-link">Documentation API (Swagger)</a>
+        <a href="/api/redoc/" class="api-link">Documentation API (ReDoc)</a>
+        <a href="/admin/" class="api-link">Interface d'administration</a>
+    </div>
+    
+    <div class="section">
+        <h2>Statut des Webhooks</h2>
+        <p>Le webhook Facebook WhatsApp est correctement configuré et accessible à l'URL :</p>
+        <code>/api/inbound/facebook-webhook/</code>
+        <p>Utilisez le token de vérification <code>feedback_platform_token</code> pour configurer le webhook dans Facebook Business Manager.</p>
+    </div>
+</body>
+</html>
